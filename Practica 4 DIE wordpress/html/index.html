@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a Docker Compose</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f1f5f9;
+            color: #222;
+        }
+
+        header {
+            background-color: #0877bd;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header img {
+            width: 100px;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 25px;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #0877bd;
+        }
+
+        pre {
+            background-color: #222;
+            color: #00e5ff;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        .boton {
+            display: inline-block;
+            background-color: #0877bd;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #222;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+             alt="Logo de Docker">
+        <h1>Introducción a Docker Compose</h1>
+        <p>Aprende a gestionar contenedores de forma sencilla</p>
+    </header>
+
+    <main>
+        <h2>¿Qué es Docker Compose?</h2>
+        <p>
+            Docker Compose es una herramienta que permite crear y gestionar
+            varios contenedores utilizando un único archivo de configuración.
+            Así podemos iniciar una aplicación completa con un solo comando.
+        </p>
+
+        <h2>¿Cómo funciona?</h2>
+        <p>
+            Para utilizar Docker Compose, creamos un archivo llamado
+            <b>docker-compose.yml</b>, donde indicamos los servicios,
+            las imágenes y los puertos que necesitamos.
+        </p>
+
+        <h2>Ejemplo de configuración</h2>
+        <pre>
+services:
+  web:
+    image: nginx
+    ports:
+      - "8080:80"
+        </pre>
+
+        <h2>Comandos básicos</h2>
+        <p>Estos son los comandos más utilizados:</p>
+
+        <pre>
+docker compose up -d
+docker compose ps
+docker compose logs
+docker compose down
+        </pre>
+
+        <p>
+            Con estos comandos podemos iniciar los contenedores,
+            comprobar su estado, ver los registros y detenerlos.
+        </p>
+
+        <h2>Ventajas de Docker Compose</h2>
+        <ul>
+            <li>Facilita la gestión de varios contenedores.</li>
+            <li>Permite reutilizar configuraciones.</li>
+            <li>Ahorra tiempo al iniciar aplicaciones.</li>
+            <li>Hace más sencillo organizar los servicios.</li>
+        </ul>
+
+        <a class="boton"
+           href="https://docs.docker.com/compose/"
+           target="_blank">
+            Aprender más
+        </a>
+    </main>
+
+    <footer>
+        <p>Introducción a Docker Compose | Práctica de informática</p>
+    </footer>
+
+</body>
+</html>
+```
